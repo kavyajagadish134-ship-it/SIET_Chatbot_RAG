@@ -49,7 +49,7 @@ def losd_pdf(pdf_path):
       sim_scores,vec_indices = index.search(query_embed, min(num_chunks, len(chunks))) 
       background = ""
       for i in vec_indices[0]:
-        if i != -1;
+        if i != -1:
         background  += chunks[i] + "\n\n"
       return background
     #Ask:
