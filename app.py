@@ -20,10 +20,10 @@ if question:
     {"role" : "user" , content = question})
   with st.chat_message("user"):
     st.write(question)
-    with st.chat_message("assistant"):
-    with st.spinner("Asking RAG for answer...."):
+  with st.chat_message("assistant"):
+  with st.spinner("Asking RAG for answer...."):
       answer = ask_rag(question, embed_model, chunks, index, api_key = mykey, num_chunks)
       st.write(answer)
 if st.button("Clear chat"):
   st.session_state.chat_hist = []
-  st.
+  st.rerun()
