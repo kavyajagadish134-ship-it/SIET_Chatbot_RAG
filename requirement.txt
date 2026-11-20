@@ -1,6 +1,6 @@
 groq
 numpy
-sentence-transformer
+sentence-transformers
 pypdf
 faiss-cpu
 streamlit
